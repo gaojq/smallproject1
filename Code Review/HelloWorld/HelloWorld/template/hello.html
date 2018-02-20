@@ -1,0 +1,21 @@
+{{hello123}}
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>EC500 MINIPROJECT1</title>
+</head>
+<body style='background:lightblue'>
+   
+
+  <form style="text-align:center" action="/search" method="post">
+ 		{% csrf_token %}
+       ID Name: <input type="text" name="name" />
+      <input type="submit" value='Submit' />
+    </form>
+    <p>{{ rlt }}</p>
+
+
+
+</body>
+</html>
